@@ -15,7 +15,8 @@ public class Fecha {
             this.mes = mes;
             this.anio = anio;
         } else {
-            throw new FechaInvalidaException("Fecha no válida");
+            //lanzar una excepción personalizada FechaInvalidaException con el mensaje "Fecha no válida"
+            
             
         }
 
@@ -23,7 +24,8 @@ public class Fecha {
     }
 
     public Fecha(String cadena){
-        try {
+        //colocar un bloque try y catch
+        
             // buscamos la primera ocurrencia de '/'
             int pos1 = cadena.indexOf('/');
             // buscamos la ultima ocurrencia de '/'
@@ -41,9 +43,13 @@ public class Fecha {
             if (!esFechaValida(dia, mes, anio)) {
                 throw new FechaInvalidaException("Fecha no válida");
             }
-        } catch (Exception e) {
-            throw new FechaInvalidaException("Formato de fecha no válido. Use 'dd/mm/yyyy'.", e);
-        }
+        
+            //lanzar una excepción personalizada FechaInvalidaException con el mensaje "Formato de fecha no válido. Use 'dd/mm/yyyy'."
+            //lanza una excepción personalizada FechaInvalidaException 
+            //con un mensaje específico "Formato de fecha no válido. Use 'dd/mm/yyyy'." 
+            //y pasa la excepción original e como causa. 
+            
+        
 
     }
 
@@ -89,7 +95,11 @@ public class Fecha {
         if (esFechaValida(dia, this.mes, this.anio)) {
             this.dia = dia;
         } else {
-            throw new FechaInvalidaException("Día no válido");
+
+            //lanza una excepción personalizada FechaInvalidaException 
+            //con el mensaje "Día no válido".
+            
+            
         }
     }
 
@@ -101,7 +111,9 @@ public class Fecha {
         if (esFechaValida(this.dia, mes, this.anio)) {
             this.mes = mes;
         } else {
-            throw new FechaInvalidaException("Mes no válido");
+            //lanza una excepción personalizada FechaInvalidaException 
+            //con el mensaje "Mes no válido".
+            
         }
     }
 
@@ -113,7 +125,9 @@ public class Fecha {
         if (esFechaValida(this.dia, this.mes, anio)) {
             this.anio = anio;
         } else {
-            throw new FechaInvalidaException("Año no válido");
+            //lanza una excepción personalizada FechaInvalidaException 
+            //con el mensaje "Año no válido".
+            
         }
     }
 
