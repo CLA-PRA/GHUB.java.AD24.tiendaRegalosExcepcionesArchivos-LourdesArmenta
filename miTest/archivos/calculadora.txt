@@ -1,0 +1,3 @@
+1,Calculadora Científica Casio,29.99,Calculadora científica con funciones avanzadas,ProductoElectronico,Casio,FX-991EX,Negro,24,3V,Cientifica
+2,Calculadora Gráfica Texas Instruments,99.99,Calculadora gráfica con pantalla a color,ProductoElectronico,Texas Instruments,TI-84 Plus CE,Plata,36,2V,Financiera
+3,Calculadora Básica Sharp,9.99,Calculadora básica para uso diario,ProductoElectronico,Sharp,EL-243S,Blanco,12,1V,basica

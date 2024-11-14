@@ -1,0 +1,3 @@
+2,Cien Años de Soledad,25.50,Una obra maestra del realismo mágico,ProductoLiterario,Gabriel García Márquez,Editorial B,1967,Novela,417,978-0-14-118499-9
+3,1984,15.00,Una distopía clásica,ProductoLiterario,George Orwell,Editorial C,1949,Novela,328,978-0-452-28423-45
+4,Cien Años de Soledad,19.99,Descripción de prueba,ProductoLiterario,Gabriel Garcia Marquez,Editorial,1967,Realismo mágico,500,978-84-376-0494-75

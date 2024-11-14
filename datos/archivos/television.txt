@@ -1,0 +1,3 @@
+1,Samsung QLED TV,999.99,Televisor QLED de última generación,Electronica,Samsung,QN55Q60TAFXZA,Negro,24,110V,55 pulgadas,4K UHD,QLED
+2,LG OLED TV,1299.99,Televisor OLED con inteligencia artificial,Electronica,LG,OLED55CXPUA,Plata,36,220V,55 pulgadas,4K UHD,OLED
+3,Sony Bravia,899.99,Televisor LED con Android TV,Electronica,Sony,XBR55X900H,Negro,12,110V,55 pulgadas,4K UHD,LED
