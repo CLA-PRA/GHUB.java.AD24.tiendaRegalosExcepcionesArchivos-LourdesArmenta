@@ -29,11 +29,21 @@ public class Menu {
 
         do {
             mostrarMenu();
-            try{
+
+            //colocar un bloque try-catch
+
+            
                 opcion = scanner.nextInt();
                 scanner.nextLine(); // Consumir la nueva línea
-            }
-            catch(InputMismatchException e){
+        
+            /*
+            Esta línea captura una excepción de tipo InputMismatchException.
+             Esta excepción se lanza cuando se intenta leer un tipo de entrada 
+             que no coincide con el tipo esperado, por ejemplo, 
+             si se espera un número entero pero se ingresa una cadena 
+             de texto.
+            */
+            {
                 System.out.println("\t***Error: Debe ingresar un número entero.***");
                 scanner.nextLine(); // Consumir la nueva línea
                 continue;
