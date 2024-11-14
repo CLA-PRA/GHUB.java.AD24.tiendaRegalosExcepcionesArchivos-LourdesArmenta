@@ -4,48 +4,17 @@ public class Usuario{
     private String contrasena;
     private String email;
     
+    //crear un constructor nulo
     public Usuario(){
 
     }
+    //crear uns constructor con 2 argumentos: nombreUsuario y contrasena
+   
 
-    public Usuario(String nombreUsuario, String contrasena) {
-        this.nombreUsuario = nombreUsuario;
-        this.contrasena = contrasena;
-    }
-
-    public String getNombreUsuario() {
-        return nombreUsuario;
-    }
-
-    public void setNombreUsuario(String nombreUsuario) {
-        this.nombreUsuario = nombreUsuario;
-    }
-
-    public String getContrasena() {
-        return contrasena;
-    }
-
-    public void setContrasena(String contrasena) {
-        this.contrasena = contrasena;
-    }
-
+    //Crear los getter y setter
+   
 
     
-
-    @Override
-    public String toString() {
-        return "Usuario{" +
-                "nombreUsuario='" + nombreUsuario + '\'' +
-                ", contrasena='" + contrasena + '\'' +
-                ", email='"+email+'\''+
-                '}';
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
+    //sobre escribir el método toString
+    
 }

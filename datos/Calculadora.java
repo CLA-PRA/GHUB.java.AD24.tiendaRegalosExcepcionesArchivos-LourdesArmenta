@@ -16,7 +16,8 @@ public class Calculadora extends ProductoElectronico  {
     public static Calculadora fromString(String[] partes) {
        
         if (partes.length < 11) {
-            throw new IllegalArgumentException("Datos incompletos para crear una Calculadora");
+            //Lanzar una una excepción de tipo IllegalArgumentException con el mensaje "Datos incompletos para crear una Calculadora"
+            
         }
         try {
             String idProducto = partes[0].trim();

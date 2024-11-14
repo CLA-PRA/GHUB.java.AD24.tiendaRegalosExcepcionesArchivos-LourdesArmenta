@@ -16,7 +16,8 @@ public class Licuadora extends ProductoElectroDomestico {
 
     public static Licuadora fromString(String[] partes) {
         if (partes.length < 12) {
-            throw new IllegalArgumentException("Datos incompletos para crear una Licuadora");
+            // lanzar una excepción de tipo IllegalArgumentException con el mensaje "Datos incompletos para crear una Licuadora
+           
         }
         try{
             String idProducto = partes[0].trim();

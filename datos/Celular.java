@@ -24,8 +24,8 @@ public class Celular extends ProductoElectronico {
 
     public static Celular fromString(String[] partes) {
         if (partes.length < 15) {
-            throw new IllegalArgumentException("Datos incompletos para crear un Celular");
-        }
+            //lanzar una excepción de tipo IllegalArgumentException con el mensaje "Datos incompletos para crear un Celular"
+        } 
         try{
 
             String idProducto = partes[0].trim();

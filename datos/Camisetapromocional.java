@@ -15,7 +15,8 @@ public class Camisetapromocional extends ProductoPromocional {
 
     public static Camisetapromocional fromString(String[] partes) {
         if (partes.length < 7) {
-            throw new IllegalArgumentException("Datos incompletos para crear una CamisetaPromocional");
+            // lanzar una excepción de tipo IllegalArgumentException con el mensaje "Datos incompletos para crear una CamisetaPromocional"
+            
         }
         try{
             String idProducto = partes[0].trim();

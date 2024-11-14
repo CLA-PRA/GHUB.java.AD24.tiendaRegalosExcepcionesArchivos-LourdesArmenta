@@ -13,22 +13,23 @@ public class Tostadora extends ProductoElectroDomestico {
 
     public static Tostadora fromString(String[] partes) {
         if (partes.length < 11) {
-            throw new IllegalArgumentException("Datos incompletos para crear una Tostadora");
+            //lanza una excepción de tipo IllegalArgumentException con el mensaje "Datos incompletos para crear una Tostadora"
+            
         }
         try{
-        String idProducto = partes[0].trim();
-        String nombre = partes[1].trim();
-        double precio = Double.parseDouble(partes[2].trim());
-        String descripcion = partes[3].trim();
-        String familia = partes[4].trim();
-        String marca = partes[5].trim();
-        String modelo = partes[6].trim();
-        String color = partes[7].trim();
-        int garantia = Integer.parseInt(partes[8].trim());
-        String voltaje = partes[9].trim();
-        int numRanuras = Integer.parseInt(partes[10].trim());
-        return new Tostadora(idProducto, nombre, precio, descripcion, familia, marca,
-                 modelo, color, garantia, voltaje, numRanuras);
+            String idProducto = partes[0].trim();
+            String nombre = partes[1].trim();
+            double precio = Double.parseDouble(partes[2].trim());
+            String descripcion = partes[3].trim();
+            String familia = partes[4].trim();
+            String marca = partes[5].trim();
+            String modelo = partes[6].trim();
+            String color = partes[7].trim();
+            int garantia = Integer.parseInt(partes[8].trim());
+            String voltaje = partes[9].trim();
+            int numRanuras = Integer.parseInt(partes[10].trim());
+            return new Tostadora(idProducto, nombre, precio, descripcion, familia, marca,
+                    modelo, color, garantia, voltaje, numRanuras);
         } catch (NumberFormatException e) {
             System.err.println("Error al convertir número: " + e.getMessage());
             throw e; // Re-lanzar la excepción para que pueda ser manejada en un nivel superior

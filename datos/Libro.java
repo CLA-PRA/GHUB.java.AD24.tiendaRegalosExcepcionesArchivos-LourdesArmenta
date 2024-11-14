@@ -14,8 +14,8 @@ public class Libro extends ProductoLiterario {
 
     public static Libro fromString(String[] partes) {
         if (partes.length < 11) {
-            throw new IllegalArgumentException("Datos incompletos para crear un Libro");
-        }
+            //lanzar una excepción de tipo IllegalArgumentException con el mensaje "Datos incompletos para crear un Libro"
+        } 
         try{
             String idProducto = partes[0].trim();
             String nombre = partes[1].trim();

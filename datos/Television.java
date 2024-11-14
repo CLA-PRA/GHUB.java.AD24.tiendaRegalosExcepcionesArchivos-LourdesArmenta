@@ -19,24 +19,24 @@ public class Television extends ProductoElectronico{
 
     public static Television fromString(String[] partes) {
         if (partes.length < 13) {
-            throw new IllegalArgumentException("Datos incompletos para crear una Television");
-        }
+            //lanza una excepción de tipo IllegalArgumentException con el mensaje "Datos incompletos para crear una Television"
+        } 
         try{
-        String idProducto = partes[0].trim();
-        String nombre = partes[1].trim();
-        double precio = Double.parseDouble(partes[2].trim());
-        String descripcion = partes[3].trim();
-        String familia = partes[4].trim();
-        String marca = partes[5].trim();
-        String modelo = partes[6].trim();
-        String color = partes[7].trim();
-        int garantia = Integer.parseInt(partes[8].trim());
-        String voltaje = partes[9].trim();
-        String tamanio = partes[10].trim();
-        String resolucion = partes[11].trim();
-        String tipoPantalla = partes[12].trim();
-        return new Television(idProducto, nombre, precio, descripcion, familia, marca, 
-                modelo, color, garantia, voltaje, tamanio, resolucion, tipoPantalla);
+            String idProducto = partes[0].trim();
+            String nombre = partes[1].trim();
+            double precio = Double.parseDouble(partes[2].trim());
+            String descripcion = partes[3].trim();
+            String familia = partes[4].trim();
+            String marca = partes[5].trim();
+            String modelo = partes[6].trim();
+            String color = partes[7].trim();
+            int garantia = Integer.parseInt(partes[8].trim());
+            String voltaje = partes[9].trim();
+            String tamanio = partes[10].trim();
+            String resolucion = partes[11].trim();
+            String tipoPantalla = partes[12].trim();
+            return new Television(idProducto, nombre, precio, descripcion, familia, marca, 
+                    modelo, color, garantia, voltaje, tamanio, resolucion, tipoPantalla);
         } catch (NumberFormatException e) {
             System.err.println("Error al convertir número: " + e.getMessage());
             throw e; // Re-lanzar la excepción para que pueda ser manejada en un nivel superior
