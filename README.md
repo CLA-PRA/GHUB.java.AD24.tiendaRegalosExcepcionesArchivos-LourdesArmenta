@@ -268,23 +268,23 @@ classDiagram
 
     class Licuadora {
         -int numCamaras
-        -String sistemaOperativo
-        -int capacidadAlmacenamiento
-        -int ram
-        -String tipoPantalla
-        -final String familia
-        +Celular(String idProducto, String nombre, double precio, String descripcion, String familia, String marca, String modelo, String color, int garantia, String voltaje, int numCamaras, String sistemaOperativo, int capacidadAlmacenamiento, int ram, String tipoPantalla)
-        +int getNumCamaras()
-        +void setNumCamaras(int numCamaras)
-        +String getSistemaOperativo()
-        +void setSistemaOperativo(String sistemaOperativo)
-        +int getCapacidadAlmacenamiento()
-        +void setCapacidadAlmacenamiento(int capacidadAlmacenamiento)
-        +int getRam()
-        +void setRam(int ram)
-        +String getTipoPantalla()
-        +void setTipoPantalla(String tipoPantalla)
-        +boolean esVendible()
+        - int potencia
+        - int capacidad
+        - final String familia
+        + Licuadora(String idProducto, String nombre, double precio, String descripcion, String familia, String marca, String modelo, String color, int garantia, String voltaje, int potencia, int capacidad)
+        + static Licuadora fromString(String[] partes)
+        + int getPotencia()
+        + void setPotencia(int potencia)
+        + int getCapacidad()
+        + void setCapacidad(int capacidad)
+        + String getFamilia()
+        + boolean aplicarDescuento(double porcentaje)
+        + String obtenerDetalles()
+        + String toString()
+        + double calcularPrecio()
+        + double calcularPrecio(double porcentaje)
+        + boolean esVendible()
+
     }
     class ProductoElectroDomestico {
         -String idProducto
